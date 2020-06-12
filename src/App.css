@@ -1,208 +1,213 @@
 .App {
-  text-align: center;
+   text-align: center;
 }
 
 /* ------------------------------------ SignIn page CSS -------------------------------------- */
 
 .signInDiv {
-  background-image: linear-gradient(
-    rgba(233, 240, 239, 0.7),
-    rgba(233, 240, 239, 0.2)
-  ),url("https://i.postimg.cc/26Yv5PV4/hero-home-oldv2.jpg");
-  background-size: cover;
-  background-position: center center;  
-  height: 100vh;
-  padding-top: 5%;
-  text-shadow: 0px 8px 8px darkgrey; 
+   background-image: linear-gradient(
+         rgba(233, 240, 239, 0.7),
+         rgba(233, 240, 239, 0.2)
+      ),
+      url('https://i.postimg.cc/26Yv5PV4/hero-home-oldv2.jpg');
+   background-size: cover;
+   background-position: center center;
+   height: 100vh;
+   padding-top: 5%;
+   text-shadow: 0px 8px 8px darkgrey;
 }
 
-.signInContainer { 
-  border: 1px solid #03d0b6;
-  border-radius: 15px;
-  -webkit-box-shadow: 0 10px 6px -6px #03d0b6;
-  -moz-box-shadow: 0 10px 6px -6px #03d0b6;
-  box-shadow: 0 10px 6px -6px #03d0b6;
-  padding: 2%;
-  margin-top: 7%;
-  background-color: #ffffff;
-  opacity: 0.7;
-  width: 50% !important;
+.signInContainer {
+   border: 1px solid #03d0b6;
+   border-radius: 15px;
+   -webkit-box-shadow: 0 10px 6px -6px #03d0b6;
+   -moz-box-shadow: 0 10px 6px -6px #03d0b6;
+   box-shadow: 0 10px 6px -6px #03d0b6;
+   padding: 2%;
+   padding-bottom: 4em;
+   margin-top: 5%;
+   background-color: #ffffff;
+   opacity: 0.8;
+   width: 50% !important;
 }
 
-@media screen and (max-width: 767px){
-  .signInDiv {
-    padding-top: 10%;
-  }
-  .signInContainer { 
-    margin-top: 15%;
-  }
+@media screen and (max-width: 767px) {
+   .signInDiv {
+      padding-top: 8%;
+   }
+   .signInContainer {
+      margin-top: 10%;
+      padding-top: 1.5em;
+   }
 }
 
 .checkbox {
-  display: flex;
-  justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
+}
+
+.userPassword {
+   float: right;
+   /* text-align: center; */
 }
 
 /* -------------------------------------- CSS Grid ALL --------------------------------------- */
 
 .gridAll {
-  height: 100vh;
+   height: 100vh;
 }
 
 .topNavBar {
-  padding-right: 1%;
-} 
+   padding-right: 1%;
+}
 
 /* ------------------------------------ CSS Display Area ------------------------------------- */
 
 .displayAreaGrid {
-  background-color: rgb(230,230,230);
-  margin-bottom: 0px !important;
+   background-color: rgb(230, 230, 230);
+   margin-bottom: 0px !important;
 }
 
 #root {
-  background-color: rgb(230,230,230);
+   background-color: rgb(230, 230, 230);
 }
 
-
-.containerAll{
-  padding: 22px 2% 2%;
+.containerAll {
+   padding: 22px 2% 2%;
 }
 
 /* --------------------------------------- CSS SideBar Area ---------------------------------- */
 
 .sideBarGrid {
-  background-color: rgb(3,208,182, 0.8);
-  margin-bottom: 0px !important;
+   background-color: rgb(3, 208, 182, 0.8);
+   margin-bottom: 0px !important;
 }
 
 .sideBar {
-  z-index: 10000;
-  position: fixed;
-  top: 20px;
-  width: 90%;
-  left: 7%;
+   z-index: 10000;
+   position: fixed;
+   top: 20px;
+   width: 90%;
+   left: 7%;
 }
 
 /* ------------------------------------ CSS Pagina Puntos ------------------------------------ */
 
 element.style {
-  top: 14px;
+   top: 14px;
 }
 
 .saldo {
-  float: right;
-  color: black;
-  font-size: 120%;
-  font-weight: bold;
-  padding: 2px 0;
+   float: right;
+   color: black;
+   font-size: 120%;
+   font-weight: bold;
+   padding: 2px 0;
 }
 
 /* input boxes in Regalar Puntos */
 
-.linea1Puntos{
-  text-align: center;
-  font-size: 110%;
+.linea1Puntos {
+   text-align: center;
+   font-size: 110%;
 }
 
-.linea2Puntos{
-  text-align: left;
-  font-size: 105%;
+.linea2Puntos {
+   text-align: left;
+   font-size: 105%;
 }
 
 .inputPuntos {
-  width: 80px;
-  margin: 0px 10px;
+   width: 80px;
+   margin: 0px 10px;
 }
 
-.selectPuntos{
-  width: 250px;
-  margin: 0px 10px;
+.selectPuntos {
+   width: 250px;
+   margin: 0px 10px;
 }
 
-@media screen and (max-width: 767px){
-  .inputPuntos {
-    width: 80px;
-    margin: 5px 10px;
-  }
-  .selectPuntos{
-    width: 150px;
-    margin: 5px 1px;
-  }
+@media screen and (max-width: 767px) {
+   .inputPuntos {
+      width: 80px;
+      margin: 5px 10px;
+   }
+   .selectPuntos {
+      width: 150px;
+      margin: 5px 1px;
+   }
 }
 
- /* texto en Acciones Recientes */
+/* texto en Acciones Recientes */
 .nombre {
-  color: rgb(3,208,182, 0.8);
+   color: rgb(3, 208, 182, 0.8);
 }
 
 /* Acciones recientes area... Scroll */
 .ui-segment {
-  height: 500px;
-  overflow-y: scroll;
+   height: 500px;
+   overflow-y: scroll;
 }
 
 /* -------------------------------------- Premios area --------------------------------------- */
 
 .ui.image {
-  position: center center; 
-  width: 290px;
-  height: 290px;
-} 
+   position: center center;
+   width: 290px;
+   height: 290px;
+}
 
-@media screen and (max-width: 767px){
-  .ui.image {
-    position: center center; 
-    width: auto;
-    height: 200px;
-  } 
+@media screen and (max-width: 767px) {
+   .ui.image {
+      position: center center;
+      width: auto;
+      height: 200px;
+   }
 }
 
 .ui.teal.inverted.button {
-  color: black !important;
-  position: relative;
+   color: black !important;
+   position: relative;
 }
 
 /* -------------------------------------- Personal area -------------------------------------- */
 
 .inactivo {
-  background-color: black;
-  filter: grayscale(80%);
+   background-color: black;
+   filter: grayscale(80%);
 }
 
 /* ----------------------------------- Admin Usuarios area ----------------------------------- */
 
 .listadoUsuario {
-  font-size: 120%;
+   font-size: 120%;
 }
 
 .listadoUsuarioExtra {
-  padding-left: 15px;
+   padding-left: 15px;
 }
 
 /* ----------------------------------- Admin Premios area ------------------------------------ */
 
 .listadoPremio1 {
-  font-size: 120%;
-  padding-left: 35px;
+   font-size: 120%;
+   padding-left: 35px;
 }
 
 .listadoPremio2 {
-  font-weight: normal;
-  padding-left: 50px;
+   font-weight: normal;
+   padding-left: 50px;
 }
 
 .Inactivo {
-  color: grey;
+   color: grey;
 }
 
 .page.modals.dimmer {
-  z-index:999999;
+   z-index: 999999;
 }
 
 .spaceBetween {
-  display: flex;
-  justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
 }
-
-
