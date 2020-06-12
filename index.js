@@ -80,6 +80,7 @@ server.get(
    }),
    (req, res) => {
       if (!req.user || !req.user.admin) {
+         console.log('Not a user.');
          res.sendStatus(401);
       } else {
          connection.query('SELECT * from usuario', (err, results) => {
@@ -410,7 +411,12 @@ server.post('/api/login', (req, res, next) => {
    console.log('login starting');
    passport.authenticate('local', function (err, user) {
       console.log('login finish');
-      if (err || !user) {
+      if (!user) {
+         res.status(401);
+         res.json({
+            message: 'There is a problem logging in as this is not a user.',
+         });
+      } else if (err) {
          res.status(401);
          res.json({ message: 'There is a problem logging in' });
       } else {
